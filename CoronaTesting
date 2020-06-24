@@ -1,0 +1,74 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Corona_File 
+{
+
+	public static void main(String[] args)
+	{
+		int arr[] = new int[10];
+			String name;
+			
+			Scanner sc = new Scanner(System.in);
+			System.out.println("CORONA CHECKUP PROGRAM");
+			System.out.println("Please enter your name: ");
+			name = sc.nextLine();
+			System.out.println("What is your age? ");
+			arr[0] = sc.nextInt();
+			System.out.println("Dear "+name+ " Do you have feve?\nYes=0,No=1\n");
+			arr[1] = sc.nextInt();
+			System.out.println("Do you have any Respiratory Distress?\nYes=0,No=1\n");
+			arr[2] = sc.nextInt();
+			System.out.println("Do you have Cough?\\nYes=0,No=1\n");
+			arr[3] = sc.nextInt();
+			System.out.println("Do you have any Tiredness?\nYes=0,No=1");
+			arr[4] = sc.nextInt();
+			
+			if(arr[1]==0 && arr[2]==0 && arr[3]==0 && arr[4]==0)
+			{
+				System.out.println("Dear "+name+",\nYou should go to clinic and test your blood sample.\n");
+			}
+			else {
+				System.out.println("Dear "+name+" If you feeling any sickness, Please visit clinic once and do your checkup.\n");
+			}
+			System.out.println("According to www.worldometer.info,");
+			
+			if(arr[0]>=10 && arr[0]<=19)
+			{
+				System.out.println("\nIn your age the fatality rate of Corona Virus is 0.00%");
+			}
+			
+			else if(arr[0]>=10 && arr[0]<=29)
+			{
+				System.out.println("\nIn your age the fatality rate of Corona Virus is 0.2%");
+			}
+			
+			else if(arr[0]>=30 && arr[0]<=39)
+			{
+				System.out.println("\nIn your age the fatality rate of Corona Virus is 0.2%");
+			}
+			else if(arr[0]>=40 && arr[0]<=49)
+			{
+				System.out.println("\nIn your age the fatality rate of Corona Virus is 0.4%");
+			}
+			else if(arr[0]>=50 && arr[0]<=59)
+			{
+				System.out.println("\nIn your age the fatality rate of Corona Virus is 1.3%");
+			}
+			else if(arr[0]>=60 && arr[0]<=69)
+			{
+				System.out.println("\nIn your age the fatality rate of Corona Virus is 3.6%");
+			}
+			else if(arr[0]>=70 && arr[0]<=79)
+			{
+				System.out.println("\nIn your age the fatality rate of Corona Virus is 8.0%");
+			}
+			else if(arr[0]>=80)
+			{
+				System.out.println("\nIn your age the fatality rate of Corona Virus is 14.8 %");
+			}
+			System.out.println("\n\n\n Important tips to prevent it:\n1)Stay at Home\n2)Use Mask\n3)Use your hands with Soap\n4)USe Hand-Sanitizer all along\n");
+	}
+
+}
