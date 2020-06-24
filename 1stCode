@@ -1,0 +1,15 @@
+public class ABC
+{
+  public static void main(String [] args)
+  {
+    string X = "Hii There buddy...";
+    System.out.println("HEllo Friend, Welcome here!!");
+    Scanner sc = new Scanner(System.in);
+    x = sc.nextLine();
+    sc.close();
+    
+    System.out.println(X+ " Good Vibes to you");
+  }
+}  
+    
+    
